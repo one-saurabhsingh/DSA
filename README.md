@@ -1,1 +1,1 @@
-Here I will upload all of my DSA/CC related questions with Solutions.
+Here I will upload all of my Data Structure & Algorithm / Competitive Coding related questions with Solutions.
