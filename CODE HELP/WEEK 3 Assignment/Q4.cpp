@@ -29,7 +29,7 @@ void findMissing(int *a, int n){
 
 int main(){
     int n;
-    int a[] ={1,3,3,4,9};
+    int a[] ={1,2,3,4,5,7,8,8,10};
     n=sizeof(a)/sizeof(int);
     findMissing(a,n);
 }
