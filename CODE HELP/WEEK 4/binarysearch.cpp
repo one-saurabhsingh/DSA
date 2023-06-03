@@ -2,51 +2,51 @@
 using namespace std;
 
 
-// int binarySearch(int arr[], int size, int target){
-//     int start =0;
-//     int end = size -1;
+int binarySearch(int arr[], int size, int target){
+    int start =0;
+    int end = size -1;
 
 
-//     while (start <= end)
-//     {
-//             int mid = start/2 + end/2; 
-//         int element = arr[mid];
+    while (start <= end)
+    {
+            int mid = start/2 + end/2; 
+        int element = arr[mid];
 
-//         if (element == target)
-//         {
-//          return mid;
-//         }
-//         else if (target<element)
-//         {
-//             // search in left
-//             end = mid -1;
-//         }
-//         else{
-//             // search in right
-//              start = mid +1 ;
-//         }
-//     }
-//     // element not found
-//     return -1;
+        if (element == target)
+        {
+         return mid;
+        }
+        else if (target<element)
+        {
+            // search in left
+            end = mid -1;
+        }
+        else{
+            // search in right
+             start = mid +1 ;
+        }
+    }
+    // element not found
+    return -1;
 
 
-// }
+}
 
-// int main(){
-//     int arr[]={0,2,7,8,10,27,28};
-//     int size = 7;
-//     int target = 2;
+int main(){
+    int arr[] = {3 ,4, 7, 8, 9 ,11, 12, 13, 17};
+    int size = 9;
+    int target = 93;
     
 
-//     int indexOftarget = binarySearch(arr, size, target);
-// if(indexOftarget == -1){
-//     cout<< "target not found"<< endl;
-// } 
-// else {
-//     cout<< "target found at "<< indexOftarget <<"."<< endl;
-// }
-//     return 0;
-// }
+    int indexOftarget = binarySearch(arr, size, target);
+if(indexOftarget == -1){
+    cout<< "target not found"<< endl;
+} 
+else {
+    cout<< "target found at "<< indexOftarget <<"."<< endl;
+}
+    return 0;
+}
 
 
 
@@ -107,43 +107,43 @@ using namespace std;
 
 // Binary Search in 2D array
 
-bool binarySearch(int arr[][4], int rows, int cols, int target){
-int s =0;
-int e = rows*cols -1;
+// bool binarySearch(int arr[][4], int rows, int cols, int target){
+// int s =0;
+// int e = rows*cols -1;
 
 
-while (s <= e)
-{   int mid = s + (e-s)/2;
-    int rowIndex = mid/cols;
-    int colIndex = mid%cols;
+// while (s <= e)
+// {   int mid = s + (e-s)/2;
+//     int rowIndex = mid/cols;
+//     int colIndex = mid%cols;
 
-    if(arr[rowIndex][colIndex] == target){
-        return true;
-    }
-    if(arr[rowIndex][colIndex] < target){
-        s = mid +1;
-    }
-    else{
-        e = mid -1;
-    }
-}
-return false;
+//     if(arr[rowIndex][colIndex] == target){
+//         return true;
+//     }
+//     if(arr[rowIndex][colIndex] < target){
+//         s = mid +1;
+//     }
+//     else{
+//         e = mid -1;
+//     }
+// }
+// return false;
 
-}
+// }
 
-int main(){
-    int arr[5][4] = { {1,2,3,4}, {5,6,7,8}, {9,10,11,12}, {13,14,15,16}, {17,18,19,20} };
-    int rows =5;
-    int cols =4;
+// int main(){
+//     int arr[5][4] = { {1,2,3,4}, {5,6,7,8}, {9,10,11,12}, {13,14,15,16}, {17,18,19,20} };
+//     int rows =5;
+//     int cols =4;
 
-    int target =9;
+//     int target =9;
 
-    bool ans = binarySearch(arr, rows,cols,target);
+//     bool ans = binarySearch(arr, rows,cols,target);
 
-    if(ans){
-        cout<< "Found "<<endl;
-    }
-    else{
-        cout<< "Not Found "<< endl;
-    }
-}
+//     if(ans){
+//         cout<< "Found "<<endl;
+//     }
+//     else{
+//         cout<< "Not Found "<< endl;
+//     }
+// }
