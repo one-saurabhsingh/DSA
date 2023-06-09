@@ -35,7 +35,7 @@ int binarySearch(int arr[], int size, int target){
 int main(){
     int arr[] = {3 ,4, 7, 8, 9 ,11, 12, 13, 17};
     int size = 9;
-    int target = 93;
+    int target = 9;
     
 
     int indexOftarget = binarySearch(arr, size, target);
